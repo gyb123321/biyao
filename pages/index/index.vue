@@ -2,7 +2,7 @@
 	<view class="content">
 		<image class="logo" src="/static/logo.png"></image>
 		<view class="text-area">
-			<text class="title">{{title}}</text>
+			<text @click="add" class="title">{{title}}</text>
 		</view>
 	</view>
 </template>
@@ -19,12 +19,15 @@
 				url: '/api/getTypeOne', //仅为示例，并非真实接口地址。
 				success: (res) => {
 					console.log(res.data);
-					this.text = 'request success';
 				}
 			});
 		},
 		methods: {
-
+			add() {
+				uni.navigateTo({
+					url: '/pages/products/products?id=140'
+				});
+			}
 		}
 	}
 </script>
