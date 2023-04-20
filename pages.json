@@ -1,6 +1,7 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+<<<<<<< HEAD
 			"path": "pages/index/index"
 		},
 		{
@@ -12,4 +13,39 @@
 		
 	},
 	"uniIdRouter": {}
+=======
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom",
+				"onReachBottomDistance": 50
+			}
+		},
+		{
+			"path": "pages/feilei/feilei",
+			"style": {
+				"navigationStyle": "custom",
+				"onReachBottomDistance": 50
+			}
+		}
+	],
+	"uniIdRouter": {},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#3cc51f",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"iconPath": "static/首页.png",
+			"selectedIconPath": "static/首页.png",
+			"text": "首页"
+		}, {
+			"pagePath": "pages/feilei/feilei",
+			"iconPath": "static/分类.png",
+			"selectedIconPath": "static/分类.png",
+			"text": "分类"
+		}]
+	}
+
+>>>>>>> e2cb0c75b6e298c90027d8f7c453df301ad422a5
 }
