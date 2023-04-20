@@ -3,15 +3,35 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationStyle": "custom",
+				"onReachBottomDistance": 50
+			}
+		},
+		{
+			"path": "pages/feilei/feilei",
+			"style": {
+				"navigationStyle": "custom",
+				"onReachBottomDistance": 50
 			}
 		}
 	],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	},
-	"uniIdRouter": {}
+	"uniIdRouter": {},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#3cc51f",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"iconPath": "static/首页.png",
+			"selectedIconPath": "static/首页.png",
+			"text": "首页"
+		}, {
+			"pagePath": "pages/feilei/feilei",
+			"iconPath": "static/分类.png",
+			"selectedIconPath": "static/分类.png",
+			"text": "分类"
+		}]
+	}
+
 }
